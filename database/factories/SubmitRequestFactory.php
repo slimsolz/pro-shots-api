@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\User;
+use App\Models\SubmitRequest;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class UserFactory extends Factory
+class SubmitRequestFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = User::class;
+    protected $model = SubmitRequest::class;
 
     /**
      * Define the model's default state.
@@ -22,10 +22,7 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'fullname' => $this->faker->name(),
-            'username' => $this->faker->userName(),
-            'password' => bcrypt('testPassword1$'),
-            'role' => 'PO',
+            //
         ];
     }
 }
